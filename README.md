@@ -13,7 +13,7 @@
 * correo:jmm00149@red.ujaen.es , amp00123@red.ujaen.es , aas00044@red.ujaen.es
 * GitHub:https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-alberto_antonio_juan
 * Trello:https://trello.com/b/6XnQjsVj/pr%C3%A1ctica-3
-* Telegram:@juanmoya8 , @albertillo43 , @antoa5
+* Telegram:@juanmoya8 , @albertillo43 , @antoas5
 
 
 
