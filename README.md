@@ -32,11 +32,6 @@ al principio del proyecto
 ![trello1](https://user-images.githubusercontent.com/99319967/158996209-c0ea1815-128e-435e-b555-9a0012b3dd96.png)
 ![trello2](https://user-images.githubusercontent.com/99319967/158996225-530554bf-e97f-4106-a76e-25d750e66a33.png)
 
-a mitad del proyecto
-!Imagen del tablero a la mitad
-
-al final del proyecto
-!Imagen del tablero a la mitad
 
 
 ## Capturas en la app Telegram
