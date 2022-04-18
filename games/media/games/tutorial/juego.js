@@ -29,182 +29,61 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>Starting Out with Undum</h1>\
+        "<h1>Capítulo 1: El descendiente de Sir Francis Drake.</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
-        <p>Welcome to the Undum tutorial. Undum is a tool for writing\
-        hypertext interactive fiction. It has some unique features\
-        and a visual design that encourages narrative games.</p>\
-        \
-        <p>Hypertext interactive fiction is the digital equivalent of the\
-        Choose Your Own Adventure (CYOA) books that were popular in the\
-        1980s. The story is told in chunks, and you select from a range\
-        of options to move it forward. Unlike the book form, however, the\
-        digital form gives you far more flexibility to tell rich stories\
-        and introduce more interesting game elements.</p>\
-        \
-        <p class='transient'>Click <a href='hub'>this link to\
-        continue...</a></p>"
+        <p>Nathan está en su casa con su amigo Victor Sullivan. Nathan está pensativo porque no sabe si ir en busca del tesoro de Sir Francis Drake.\
+        Ambos son expertos ladrones y cazatesoros, teniendo en su historial grandes hazañas como haber encontrado un tesoro español como El Dorado.\
+        <b> Sully: </b> ¿Has decidido ya si quieres ir tras el tesoro? Sabes que te voy a acompañar siempre donde me digas.\
+        <b> Nate: </b> No lo sé Sully... Tenemos el anillo de Sir Francis, pero no sé por donde empezar.\
+        <b> Sully: </b> ¿Qué tal si te digo que conozco a una persona que tiene su diario? Igual por ahí podemos averiguar pistas que nos ayuden a iniciar la aventura. Pero te aviso, hay que robárselo y no va a ser nada fácil, ellos también quieren el tesoro.\
+        <b> Nate: </b> <a href='no_ir> No sé Sully, no sé si es buena idea remover el pasado. </a> Pero por otro lado... <a href='ir'> si no lo hacemos nosotros, lo van a hacer ellos y ese tesoro me pertenece.</a></p >",
+        {
+            heading: "Inicio",
+            enter: function (character, system, from) {
+                system.setQuality(
+                    "progreso_historia",
+                    character.qualities.progreso_historia + 0.5
+                );
+            },
+        }
     ),
 
-    // NB: The 'hub' situation which is the main list of topics, is
-    // defined wholly in the HTML file, and doesn't have an entry in
-    // the game.situations dictionary in this file.
+    no_ir: new undum.SimpleSituation(
+        "<p> <b> Sully: </b> Venga chico, sabes que tienes que hacerlo. Eres un Drake, está en tu sangre, hemos hecho cosas peores. Ni siquiera es iniciar la búsqueda, es ir a robarles el diario a esos pringados y ya decidimos que hacer.\
+         <b> Nate: </b> No sé Sully. Son gente peligrosa y es meternos en la boca del lobo, a saber cuantos tipos peligrosos habrán por ahí, y nosotros somos dos...\
+         <b> Sully: </b> Sí, tienes razón, nos superan en número, pero a mí Marlowe me conoce, estuvimos juntos, sé como manejarla. Confía en mí.\
+         <b> Nate: </b> <a href='ir'> Venga vale, vamos a hacerlo antes de que me arrepienta... </a> </p > "
+        ),
 
-    // For variety, here we define a situation using the top-level
-    // Situation type. This is a neat approach to generate text by
-    // looking it up in the HTML document. For static text that makes
-    // more sense than writing it longhand.
-    situations: new undum.Situation({
-        enter: function(character, system, from) {
-            system.write($("#s_situations").html());
-        },
-        tags: ["topic"],
-        optionText: "What Undum Games are Made Of",
-        displayOrder: 1
-    }),
-    todo: new undum.SimpleSituation(
-        "<p>Two things can happen in a situation. The character either\
-        <a href='links'>leaves</a> the situation and enters another one, or\
-        they carry out some <a href='./do-something'>action</a>. Actions may\
-        perform some processing, they may display some results, but\
-        ultimately they put the character back into the same situation\
-        again.</p>\
-        \
-        <p>When you are designing your game, use situations to reflect a\
-        change in what the character can do. So you would change situation if\
-        the character pulls a lever to open a trapdoor, for example. Actions\
-        are intended for situations where the character can examine things\
-        more closely, or maybe top up their magic by drinking a potion.\
-        Things that don't affect the state of the world around them.</p>\
-        \
-        <p>Situations generate content when they are <em>enter</em>ed,\
-        <em>exit</em>ed, and when they receive an <em>act</em>ion (the\
-        italicised words are the names of the three methods that do this).\
-        You can write code to generate content in any way you like, so the\
-        content that is displayed can be totally dynamic: taking into\
-        account the current state of the character.\
-        Content is just plain HTML, so you use regular HTML tags to make\
-        things <strong>bold</strong> or <em>italic</em>, or to include\
-        images. This gives you a lot of flexibility. For example, since Undum\
-        targets HTML5 browsers, you could use the <em>audio</em> or\
-        <em>video</em> tags to include rich media.</p>\
-        \
-        <p class='transient'>Make sure you've carried out the action above,\
-        then <a href='hub'>return to the topic list</a>.</p>",
+
+    ir: new undum.SimpleSituation(
+        "<h1> Robo del diario. </h1>\
+        <p> Nate y Sully van al bar donde han quedado con Marlowe y Talbot. Han decidido acordar un intercambio entre el anillo y el diario.\
+        Obviamente el anillo es mucho más valioso, por lo que Drake y sully han conseguido hacer una réplica exacta del anillo, que a ellos no les va a servir de nada.\
+        Durante el intercambio Talbot se da cuenta que el anillo es falso, por lo que Drake y Sully tienen que salir por patas de ese sitio, no sin antes tener que pelearse con medio bar.\
+        Cuando por fin pueden salir, después de recibir unos cuantos golpes, un hombre de Talbot les dispara y le quita el anillo y el diario.\
+        Cuando parecen que los dos estan muertos, este hombre se lía a tiros con Talbot y Marlowe y tienen que huir en el coche.\
+        Aparentemente, este hombre, Charlie Cutter, estaba compinchado con Sully y Drake, por lo que la operación ha sido todo un éxito.\
+        Se reunen en una guarida los 3 junto con una vieja amiga, Chloe Frazer. Echan un vistazo al diario y tienen que decidir si ir a <a href='Londres'> Londres </a> o a <a href='Francia'> Francia. </a> </p > ",
         {
-            actions: {
-                'do-something': "<p>You carried out the action, well done.\
-                                 You'll notice that the links for this\
-                                 situation are still active. This means you\
-                                 can click to perform the action again.</p>"
-            }
+            heading: "Robo",
+            enter: function (character, system, from) {
+                system.setQuality(
+                    "progreso_historia",
+                    character.qualities.progreso_historia + 1
+                );
+            },
         }
     ),
-    links: new undum.SimpleSituation(
-        "<p>Between each chunk of new text, Undum inserts a discreet line\
-        in the margin. This allows you to see at a glance everything that\
-        has been output as a result of your last click.\
-        It is particularly useful for small devices, or when\
-        lots of content has appeared. The window also scrolls so the start\
-        of the new content is as near to the top of the window as possible.\
-        This is also designed to help you read more naturally.</p>\
-        \
-        <p>If you've been watching carefully, you will have noticed that\
-        parts of the text have been disappearing when you move between\
-        situations. This isn't a bug! One of the aims of Undum is to give\
-        game designers the ability to make the transcript of\
-        the game read as a coherent piece of narrative. However, you often\
-        need chunks of text that do nothing but offer the reader choices.\
-        Undum defines a special CSS class to add to your HTML for this\
-        (remember generated content is just HTML). It is <em>transient</em>,\
-        and can be applied to paragraphs, <em>div</em>s, or just\
-        <em>span</em>s<span class='transient'> (such as this one)</span>.</p>\
-        \
-        <p>You may also have noticed that, when you move situations, all the\
-        links in the previous situation turn into regular text. This is to\
-        stop you backtracking and trying previous options when you've already\
-        committed to one. In other H-IF systems, this is\
-        done by completely removing the content from previous pages.\
-        That prevents you going back and reading your story, however.</p>\
-        \
-        <p class='transient'>The 'Different Kinds of Links' topic has more\
-        about these links.\
-        Let's return to the <a href='hub'>topic list</a>.</p>",
-        {
-            heading: "Disappearing Content",
-            diplayOrder: 2,
-            tags: ["topic"]
-        }
+    Londres: new undum.SimpleSituation(
+        "<h1> Visita al antiguo metro de Londres. </h1>\
+        <p></p>",
+        
     ),
-    sticky: new undum.SimpleSituation(
-        "<p>There are three types of link in Undum. The first two we've seen\
-        in previous topics:\
-        links to change situation and links to carry out an action. When you\
-        include a link in your output, Undum parses it and wires it up\
-        correctly. If you create a link with a HTML <em>href</em> attribute\
-        containing just a name ('ballroom', for\
-        example) this will send the character to the situation with that\
-        name. Links\
-        with two components ('ballroom/view-painting', for example) send\
-        the character to a new situation <em>and then</em> carry out the\
-        named action ('view-painting' in this case). To carry out an action\
-        in the current situation, you can replace the situation name with a\
-        dot (so it would be './view-painting'). In all cases, if the\
-        character is already in that situation, then the situation's\
-        <em>enter</em> method won't be called again.</p>\
-        \
-        <img src='media/games/tutorial/woodcut2.png' class='float_left'>\
-        <p>The third type of link, then, is a general hyperlink. If your\
-        link doesn't consist of a single element or pair of elements, as\
-        above, then Undum will guess that you have a normal hyperlink. As\
-        <a href='http://news.bbc.co.uk' class='sticky'>in this link</a>.\
-        If you have a link that <em>does</em> look like an Undum link, you\
-        can still force Undum not to interpret it as an action or situation\
-        move, by adding the CSS class <em>raw</em> to the HTML <em>a</em> tag.\
-        links that don't have the <em>raw</em> class, but that are considered\
-        to be non-Undum links (like the link above), will have <em>raw</em>\
-        added to them before display. This could allow you to style external\
-        links differently, as we have done here.</p>\
-        \
-        <p>In the last situation I said you can prevent links from being\
-        turned into regular text when you move situations. This is done\
-        by another CSS class: <em>sticky</em>. When you\
-        <a href='oneshot'>leave this situation</a>, you'll notice the\
-        external link stays active. This can allow you to have options that\
-        stay valid throughout the narrative, for example, such as a spell to\
-        teleport home.</p>",
-        {
-            tags: ["topic"],
-            displayOrder: 3,
-            heading: "Different Kinds of Links"
-        }
-    ),
-    oneshot: new undum.SimpleSituation(
-        "<p>There is one final option for links. If you give a link\
-        the <em>once</em> CSS class, then that link will disappear\
-        after it is clicked. This is  used (as in\
-        <a href='./one-time-action' class='once'>this link</a>) for\
-        actions that you only want to be possible once. There is no\
-        point using 'once' on situation links because they'll be turned\
-        into text as soon as you click them anyway (unless they are also\
-        <em>sticky</em>, of course).</p><p>Once links are useful\
-        for actions such as examining an object more carefully. You\
-        don't want lots of repeated descriptions, so making the link\
-        a <em>once</em> link is more user friendly.</p>\
-        <p>If you have more than one link to the same action, then all\
-        matching links will be removed, so you don't have to worry about\
-        the player having an alternative way to carry out the action.</p>\
-        <p class='transient'>After you've clicked the link, let's\
-        <a href='hub'>move on</a>.</p>",
-        {
-            actions: {
-                "one-time-action": "<p>As I said, one time actions are\
-                                   mostly used to describe something in\
-                                   more detail, where you don't want the\
-                                   same descriptive text repeated over and\
-                                   over</p>"
-            }
-        }
+    Francia: new undum.SimpleSituation(
+        "<h1> Visita a un castillo abandonado. </h1>\
+        <p></p>",
+        
     ),
     qualities: new undum.SimpleSituation(
         "<p>Let's talk about the character.\
