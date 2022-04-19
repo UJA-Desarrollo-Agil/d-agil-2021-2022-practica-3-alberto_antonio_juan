@@ -77,12 +77,62 @@ undum.game.situations = {
     ),
     Londres: new undum.SimpleSituation(
         "<h1> Visita al antiguo metro de Londres. </h1>\
-        <p></p>",
+        <p>Nathan, Victor y Chloe, entran en el antiguo metro de Londres para intentar buscar en una de sus librerias secretas, el ciervo de oro que, escconde un mapa con pistas sobre la ciudad perdida.\
+		 <b> Sully: </b> ¿Nate, no crees que este metro es demasiado moderno para encontrar eso?.\
+		 <b> Chloe: </b>...Estos piratas escondiendo cosas en sitios inpensables... .\
+		 <b> Nathan: </b> !CALLAD¡. Los secuaces de Marlowe están también aquí!.\
+		 <b> Sully: </b> Venga hay que darse prisa y estar en sigilo.\
+		 Los tres aventureros continuan su recorrido por el metro sin llamar la atención de los secuaces y vigilantes que Marlowe ha traido\
+		 <b> Sully: </b> ¿Nate, es esa la libreria?.\
+		 <b> Nathan: </b> SI, pero parece que se nos han adelantado.\
+		 <b> Chloe: </b> Mirad, el ciervo está ahí como decía el escrito.\
+		 Marlowe y sus secuaces no saben que lo que hay que buscar es un ciervo dorado, así que, buscan por toda la sala rompiendo cosas y tirandolo todo lo que, aprovecharán Nathan, Chloe y Sully para\
+		 coger el ciervo y largarse de allí lo más sigiloso posible.\
+		 <b> Nathan: </b>  ya casiii..........ohohoho AHH.\
+		 <b> Sully: </b> ¡Nathan detras!.\
+		 <b> Chloe: </b> ¡Disparad nos han escuchado!.\
+		 Nathan consigue robar el ciervo, entre un tiroteo, de oro que contiene un pergamino con parece ser una edificación en Arabia\
+		 Los 3 chicos se reunen para ver y decidir el viaje a Arabia pero antes investigarán un viejo castillo al este de Francia <a href='Francia'> Chateau </a> \</p>",
+		  {
+            heading: "Ciervo Dorado",
+            enter: function (character, system, from) {
+                system.setQuality(
+                    "progreso_historia",
+                    character.qualities.progreso_historia + 1
+                );
+            },
+        }
         
     ),
     Francia: new undum.SimpleSituation(
         "<h1> Visita a un castillo abandonado. </h1>\
-        <p></p>",
+        <p>Victor y Nathan Drake viajan al este de Francia, a un castillo abandonado en mitad de una jungla.\
+		<b> Nathan: </b> Y aquí está Sully, parece que está abandonado y sin nadie a la vista.\
+		<b> Sully: </b> A no ser que Marlowe y los suyos estén otra vez detrás.\
+		<b> Nathan: </b> Si, no es la primera vez que nos pasa, mejor darse prisa.\
+		<b> Sully: </b>  ¿Ves algo para colarse Nate? hay demasiada maleza.\
+		<b> Nathan: </b> Probemos por esa cornisa Sully.\
+		Nathan y Victor se cuelan por una cornisa dentro del hall principal del castillo.\
+		Se dan cuenta de que todo está podrido y la maleza se ha apoderado del lugar\
+		<b> Nathan: </b> !Dios santo, solo arbustos y raices de arboles¡.\
+		<b> Sully: </b> Ey Nate,¿Qué es eso que brilla? parece como un botón ¿no? .\
+		<b> Nathan: </b> Voy a pulsarlo.\
+		Nathan pulsa el botón y seguidamente se abre un pasadizo secreto que da a una cripta con lo que parece ser tumbas templarias\
+		<b> Nathan: </b>  Están aquí Sully, los guardianes templarios, seguro que alguno guarda en su tumba alguna pista.\
+		<b> Sully: </b>  Abramoslas Nate. Pero empecemos por esa del medio que parece mas importante.\
+		Nathan y Sully abren la tumba del medio. Lo que se encuentran es uno de los mensajeros personales de Sir.Francis Drake\
+		<b> Nathan: </b> Pero.. si.. es él Sully, Henrry Avery .\
+		<b> Sully: </b> Mira Nate, tiene una carta en su mano.\
+		<b> Carta: </b> Señor Francis, la expedición concluyó como usted mandó, aguardaremos con el artefacto en el desierto de Arabia. <a href='Arabia'> Desierto Arabia </a> .\</p>",
+		{
+            heading: "Chateau",
+            enter: function (character, system, from) {
+                system.setQuality(
+                    "progreso_historia",
+                    character.qualities.progreso_historia + 1
+                );
+            },
+        }
         
     ),
     qualities: new undum.SimpleSituation(
