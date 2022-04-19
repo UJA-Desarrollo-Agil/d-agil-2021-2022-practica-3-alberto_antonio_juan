@@ -65,9 +65,7 @@ vinculación con GitHub
 	
 ## Sprint review
 	
-	El producto que hemos desarrollado, en este caso, el juego: "el tesoro de Drake", hemos querido ofrecer al usuario una experiencia 
-basada en la famosa película "Uncharted", la cual deje una experiencia de juego y un ambiente parecida a la misma, la cual ofrece 
-diálogos con personajes reales e interacción con objetos que den realismo a la historia.
+	El producto que hemos desarrollado, en este caso, el juego: "el tesoro de Drake", hemos querido ofrecer al usuario una experiencia basada en la famosa película "Uncharted", la cual deje una experiencia de juego y un ambiente parecida a la misma, la cual ofrece diálogos con personajes reales e interacción con objetos que den realismo a la historia.
 
 	En este spint nos hemos centrado en los diálogos y ambiente de juego, dando prioridad al realismo del mismo, a continiación
 implementaremos las restantes funciones para conseguir una jugabilidad total.
