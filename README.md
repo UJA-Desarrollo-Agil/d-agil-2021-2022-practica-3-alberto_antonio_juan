@@ -24,7 +24,7 @@
 
 ## Descripción del juego
 
-##El ladrón de Tesoros
+## El ladrón de Tesoros
 
 En  este juego, eres un intrépido ladrón que va en busca de un famoso tesoro perdido. Ayúdalo a encontrar el camino y esquivar las trampas y obstáculos para
 conseguir tan preciado tesoro. 
@@ -61,24 +61,24 @@ vinculación con GitHub
 
 ## Sprint planning final
 
-	Mostramos como queda nuestro tablero en trello:
+Mostramos como queda nuestro tablero en trello:
 	
 ## Sprint review
 	
-	El producto que hemos desarrollado, en este caso, el juego: "el tesoro de Drake", hemos querido ofrecer al usuario una experiencia basada en la famosa película "Uncharted", la cual deje una experiencia de juego y un ambiente parecida a la misma, la cual ofrece diálogos con personajes reales e interacción con objetos que den realismo a la historia.
+El producto que hemos desarrollado, en este caso, el juego: "el tesoro de Drake", hemos querido ofrecer al usuario una experiencia basada en la famosa película "Uncharted", la cual deje una experiencia de juego y un ambiente parecida a la misma, la cual ofrece diálogos con personajes reales e interacción con objetos que den realismo a la historia.
 
-	En este spint nos hemos centrado en los diálogos y ambiente de juego, dando prioridad al realismo del mismo, a continiación
+En este spint nos hemos centrado en los diálogos y ambiente de juego, dando prioridad al realismo del mismo, a continiación
 implementaremos las restantes funciones para conseguir una jugabilidad total.
 
 	
 		
 ## Sprint Retrospective
 
-	Tras la primera toma de contacto y finalizado el sprint, hemos notado que trabajar con personas de confianza
+Tras la primera toma de contacto y finalizado el sprint, hemos notado que trabajar con personas de confianza
 las cuales conoces como trabajan, facilita mucho la realización de la práctica. Pensamos que hemos sabido 
 comunicarnos bien y tenemos la fe de que haremos un producto atractivo.
 		
-	Aunque hemos tenido unos problemas de planificación, sabemos que terminaremos el producto con la calidad deseada y 
+Aunque hemos tenido unos problemas de planificación, sabemos que terminaremos el producto con la calidad deseada y 
 esperada, realizando en proximos sprints las funcionalidades faltantes y que darán en toque final a nuestro producto.
 	
 
