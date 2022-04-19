@@ -52,6 +52,7 @@ vinculación con GitHub
 # Práctica 4
 
 ## Sprint backlog
+![Tablero Trello 1](https://user-images.githubusercontent.com/99321487/164054725-058b62e2-85ff-4cd3-ab6a-9f227add0ad7.png)
 
 -establecer diálogos: situación la cual da un punto de interacción a la historia.
 
@@ -66,7 +67,8 @@ vinculación con GitHub
 ## Sprint planning final
 
 Mostramos como queda nuestro tablero en trello:
-	
+![Tablero Trello 2](https://user-images.githubusercontent.com/99321487/164054839-34a68a51-2d68-479f-b4cf-9c09714d2bac.png)
+
 ## Sprint review
 	
 El producto que hemos desarrollado, en este caso, el juego: "el tesoro de Drake", hemos querido ofrecer al usuario una experiencia basada en la famosa película "Uncharted", la cual deje una experiencia de juego y un ambiente parecida a la misma, la cual ofrece diálogos con personajes reales e interacción con objetos que den realismo a la historia.
