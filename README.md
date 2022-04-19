@@ -6,7 +6,7 @@
 * [Descripción del juego](#descripción-del-juego)
 * [Capturas de pantalla del tablero Trello](#capturas-de-pantalla-del-tablero-trello)
 * [Capturas en la app telegram](#capturas-en-la-app-telegram)
-* [Práctica 4](#practica-4)
+* [Práctica 4](#práctica-4)
 * [Sprint backlog](#sprint-backlog)
 * [Sprint planning final](#sprint-planning-final)
 * [Sprint review](#sprint-review)
@@ -54,9 +54,13 @@ vinculación con GitHub
 ## Sprint backlog
 
 -establecer diálogos: situación la cual da un punto de interacción a la historia.
+
 -progreso de la partida: permite al usuario una mejor esperiencia de juego.
+
 -movilidad: ofrece la posibilidad de elegir tu propia historia.
+
 -personificar jugador: opción que permite mayor realismo.
+
 -recogida de objetos: favorece la jugabilidad e interacción de juego.
 
 ## Sprint planning final
