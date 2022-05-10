@@ -11,6 +11,7 @@
 * [Sprint planning final](#sprint-planning-final)
 * [Sprint review](#sprint-review)
 * [Sprint Retrospective](#sprint-retrospective)
+* [Sprint 2](#sprint-2)
 
 ## Autores
 
@@ -87,7 +88,45 @@ comunicarnos bien y tenemos la fe de que haremos un producto atractivo.
 Aunque hemos tenido unos problemas de planificación, sabemos que terminaremos el producto con la calidad deseada y 
 esperada, realizando en proximos sprints las funcionalidades faltantes y que darán en toque final a nuestro producto.
 	
+# Sprint 2
+	En la segunda parte de esta práctica hemos finalizado nuestro producto.
+	
+>Captura de pantalla del tablero Trello al comienzo del sprint 2.
 
+
+## Planificación 
+	
+EL reparto de tareas, aunque en ciertas ocasiones trabajamos de forma conjunta fue la siguiente:
+	
+- Juan: Diálogos 
+
+- Alberto: Historia y progreso
+- Antonio: Interacción y animación
+
+
+## Product Backlog Refinement
+
+Tras la salida de los nuevos requisitos de la práctica, los cuales son:
+- El jugador podrá solicitar ayuda al juego y recibirá información que le sirva para entender el juego y lograr llegar al final del mismo.
+- La ayuda que aporte el juego será sensible al contexto, es decir, en función de la situación en que esté y/o los objetos que tenga y/o la puntuación que lleve y/o cualquier otro aspecto que deseéis considerar se le aportará una información de ayuda u otra. (esta HU depende de la anterior)
+- El juego estará disponible en español y en otro idioma.
+	
+Sin embargo, viendo que dichos requisitos no eran indispensables, decidimos no implementar ninguno de ellos, por dos razones, la primera de ellas es que
+consideremos que no tenía valor suficiente, la segunda y que más peso tenía, es que queríamos completar todos los requisitos iniciales y darle mas importancia a los mismos.
+
+
+## Sprint Review
+
+En este segundo sprint hemos completado nuestro producto, completando las historias de usuario establecidas con anterioridad.
+
+>Capturas de trello al final del producto:
+
+
+## Sprint Retrospective
+
+Hemos trabajado más individualmente en esta segunda parte de la práctica, juntando nuestro trabajo al final de la misma, no obstante, hemos 
+mantenido conversaciones contínuas sobre la realización de la misma ,prestandonos ayuda cuando ha sido necesario , lo cual ha dado lugar a la obtención 
+del producto deseado.
 
 
 
