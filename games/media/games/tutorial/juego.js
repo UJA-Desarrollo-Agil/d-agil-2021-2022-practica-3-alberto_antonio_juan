@@ -29,15 +29,15 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>Capítulo 1: El descendiente de Sir Francis Drake.</h1>\
+        "<h1>CapÃ­tulo 1: El descendiente de Sir Francis Drake.</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
-        <p>Nathan está en su casa con su amigo Victor Sullivan. Nathan está pensativo porque no sabe si ir en busca del tesoro de Sir Francis Drake.\
-        Ambos son expertos ladrones y cazatesoros, teniendo en su historial grandes hazañas como haber encontrado un tesoro español como El Dorado.\
-        <b> Sully: </b> ¿Has decidido ya si quieres ir tras el tesoro? Sabes que te voy a acompañar siempre donde me digas.\
-        <b> Nate: </b> No lo sé Sully... Tenemos el anillo de Sir Francis, pero no sé por donde empezar.\
-        <b> Sully: </b> ¿Qué tal si te digo que conozco a una persona que tiene su diario? Igual por ahí podemos averiguar pistas que nos ayuden a iniciar la aventura. Pero te aviso, hay que robárselo y no va a ser nada fácil, ellos también quieren el tesoro.\
-        <b> Nate: </b> <a href='no_ir> No sé Sully, no sé si es buena idea remover el pasado. </a> Pero por otro lado... <a href='ir'> si no lo hacemos nosotros, lo van a hacer ellos y ese tesoro me pertenece.</a></p >",
-        {
+        <p>Nathan estÃ¡ en su casa con su amigo Victor Sullivan. Nathan estÃ¡ pensativo porque no sabe si ir en busca del tesoro de Sir Francis Drake.\
+        Ambos son expertos ladrones y cazatesoros, teniendo en su historial grandes hazaÃ±as como haber encontrado un tesoro espaÃ±ol como El Dorado.\
+        <b> Sully: </b> Â¿Has decidido ya si quieres ir tras el tesoro? Sabes que te voy a acompaÃ±ar siempre donde me digas.\
+        <b> Nate: </b> No lo sÃ© Sully... Tenemos el anillo de Sir Francis, pero no sÃ© por donde empezar.\
+        <b> Sully: </b> Â¿QuÃ© tal si te digo que conozco a una persona que tiene su diario? Igual por ahÃ­ podemos averiguar pistas que nos ayuden a iniciar la aventura. Pero te aviso, hay que robÃ¡rselo y no va a ser nada fÃ¡cil, ellos tambiÃ©n quieren el tesoro.\
+        <b> Nate: </b> <a href='no_ir'> No sÃ© Sully, no sÃ© si es buena idea remover el pasado. </a> Pero por otro lado... <a href='ir'> si no lo hacemos nosotros, lo van a hacer ellos y ese tesoro me pertenece.</a></p >",
+    {
             heading: "Inicio",
             enter: function (character, system, from) {
                 system.setQuality(
@@ -49,22 +49,20 @@ undum.game.situations = {
     ),
 
     no_ir: new undum.SimpleSituation(
-        "<p> <b> Sully: </b> Venga chico, sabes que tienes que hacerlo. Eres un Drake, está en tu sangre, hemos hecho cosas peores. Ni siquiera es iniciar la búsqueda, es ir a robarles el diario a esos pringados y ya decidimos que hacer.\
-         <b> Nate: </b> No sé Sully. Son gente peligrosa y es meternos en la boca del lobo, a saber cuantos tipos peligrosos habrán por ahí, y nosotros somos dos...\
-         <b> Sully: </b> Sí, tienes razón, nos superan en número, pero a mí Marlowe me conoce, estuvimos juntos, sé como manejarla. Confía en mí.\
+        "<p> <b> Sully: </b> Venga chico, sabes que tienes que hacerlo. Eres un Drake, estÃ¡ en tu sangre, hemos hecho cosas peores. Ni siquiera es iniciar la bÃºsqueda, es ir a robarles el diario a esos pringados y ya decidimos que hacer.\
+         <b> Nate: </b> No sÃ© Sully. Son gente peligrosa y es meternos en la boca del lobo, a saber cuantos tipos peligrosos habrÃ¡n por ahÃ­, y nosotros somos dos...\
+         <b> Sully: </b> SÃ­, tienes razÃ³n, nos superan en nÃºmero, pero a mÃ­ Marlowe me conoce, estuvimos juntos, sÃ© como manejarla. ConfÃ­a en mÃ­.\
          <b> Nate: </b> <a href='ir'> Venga vale, vamos a hacerlo antes de que me arrepienta... </a> </p > "
-        ),
-
-
+    ),
     ir: new undum.SimpleSituation(
         "<h1> Robo del diario. </h1>\
         <p> Nate y Sully van al bar donde han quedado con Marlowe y Talbot. Han decidido acordar un intercambio entre el anillo y el diario.\
-        Obviamente el anillo es mucho más valioso, por lo que Drake y sully han conseguido hacer una réplica exacta del anillo, que a ellos no les va a servir de nada.\
+        Obviamente el anillo es mucho mÃ¡s valioso, por lo que Drake y sully han conseguido hacer una rÃ©plica exacta del anillo, que a ellos no les va a servir de nada.\
         Durante el intercambio Talbot se da cuenta que el anillo es falso, por lo que Drake y Sully tienen que salir por patas de ese sitio, no sin antes tener que pelearse con medio bar.\
-        Cuando por fin pueden salir, después de recibir unos cuantos golpes, un hombre de Talbot les dispara y le quita el anillo y el diario.\
-        Cuando parecen que los dos estan muertos, este hombre se lía a tiros con Talbot y Marlowe y tienen que huir en el coche.\
-        Aparentemente, este hombre, Charlie Cutter, estaba compinchado con Sully y Drake, por lo que la operación ha sido todo un éxito.\
-        Se reunen en una guarida los 3 junto con una vieja amiga, Chloe Frazer. Echan un vistazo al diario y tienen que decidir si ir a <a href='Londres'> Londres </a> o a <a href='Francia'> Francia. </a> </p > ",
+        Cuando por fin pueden salir, despuÃ©s de recibir unos cuantos golpes, un hombre de Talbot les dispara y le quita el anillo y el diario.\
+        Cuando parecen que los dos estan muertos, este hombre se lÃ­a a tiros con Talbot y Marlowe y tienen que huir en el coche.\
+        Aparentemente, este hombre, Charlie Cutter, estaba compinchado con Sully y Drake, por lo que la operaciÃ³n ha sido todo un Ã©xito.\
+        Se reunen en una guarida los 3 junto con una vieja amiga, Chloe Frazer. Echan un vistazo al diario y tienen que decidir si ir a <a href='londres'> Londres </a> o a <a href='francia'> Francia. </a> </p > ",
         {
             heading: "Robo",
             enter: function (character, system, from) {
@@ -75,25 +73,25 @@ undum.game.situations = {
             },
         }
     ),
-    Londres: new undum.SimpleSituation(
+    londres: new undum.SimpleSituation(
         "<h1> Visita al antiguo metro de Londres. </h1>\
         <p>Nathan, Victor y Chloe, entran en el antiguo metro de Londres para intentar buscar en una de sus librerias secretas, el ciervo de oro que, escconde un mapa con pistas sobre la ciudad perdida.\
-		 <b> Sully: </b> ¿Nate, no crees que este metro es demasiado moderno para encontrar eso?.\
+		 <b> Sully: </b> Â¿Nate, no crees que este metro es demasiado moderno para encontrar eso?.\
 		 <b> Chloe: </b>...Estos piratas escondiendo cosas en sitios inpensables... .\
-		 <b> Nathan: </b> !CALLAD¡. Los secuaces de Marlowe están también aquí!.\
+		 <b> Nathan: </b> !CALLADÂ¡. Los secuaces de Marlowe estÃ¡n tambiÃ©n aquÃ­!.\
 		 <b> Sully: </b> Venga hay que darse prisa y estar en sigilo.\
-		 Los tres aventureros continuan su recorrido por el metro sin llamar la atención de los secuaces y vigilantes que Marlowe ha traido\
-		 <b> Sully: </b> ¿Nate, es esa la libreria?.\
+		 Los tres aventureros continuan su recorrido por el metro sin llamar la atenciÃ³n de los secuaces y vigilantes que Marlowe ha traido\
+		 <b> Sully: </b> Â¿Nate, es esa la libreria?.\
 		 <b> Nathan: </b> SI, pero parece que se nos han adelantado.\
-		 <b> Chloe: </b> Mirad, el ciervo está ahí como decía el escrito.\
-		 Marlowe y sus secuaces no saben que lo que hay que buscar es un ciervo dorado, así que, buscan por toda la sala rompiendo cosas y tirandolo todo lo que, aprovecharán Nathan, Chloe y Sully para\
-		 coger el ciervo y largarse de allí lo más sigiloso posible.\
+		 <b> Chloe: </b> Mirad, el ciervo estÃ¡ ahÃ­ como decÃ­a el escrito.\
+		 Marlowe y sus secuaces no saben que lo que hay que buscar es un ciervo dorado, asÃ­ que, buscan por toda la sala rompiendo cosas y tirandolo todo lo que, aprovecharÃ¡n Nathan, Chloe y Sully para\
+		 coger el ciervo y largarse de allÃ­ lo mÃ¡s sigiloso posible.\
 		 <b> Nathan: </b>  ya casiii..........ohohoho AHH.\
-		 <b> Sully: </b> ¡Nathan detras!.\
-		 <b> Chloe: </b> ¡Disparad nos han escuchado!.\
-		 Nathan consigue robar el ciervo, entre un tiroteo, de oro que contiene un pergamino con parece ser una edificación en Arabia\
-		 Los 3 chicos se reunen para ver y decidir el viaje a Arabia pero antes investigarán un viejo castillo al este de Francia <a href='Francia'> Chateau </a> \</p>",
-		  {
+		 <b> Sully: </b> Â¡Nathan detras!.\
+		 <b> Chloe: </b> Â¡Disparad nos han escuchado!.\
+		 Nathan consigue robar el ciervo, entre un tiroteo, de oro que contiene un pergamino con parece ser una edificaciÃ³n en Arabia\
+		 Los 3 chicos se reunen para ver y decidir el viaje a Arabia pero antes investigarÃ¡n un viejo castillo al este de Francia <a href='francia'> Chateau </a> \</p>",
+        {
             heading: "Ciervo Dorado",
             enter: function (character, system, from) {
                 system.setQuality(
@@ -102,29 +100,29 @@ undum.game.situations = {
                 );
             },
         }
-        
+
     ),
-    Francia: new undum.SimpleSituation(
+    francia: new undum.SimpleSituation(
         "<h1> Visita a un castillo abandonado. </h1>\
         <p>Victor y Nathan Drake viajan al este de Francia, a un castillo abandonado en mitad de una jungla.\
-		<b> Nathan: </b> Y aquí está Sully, parece que está abandonado y sin nadie a la vista.\
-		<b> Sully: </b> A no ser que Marlowe y los suyos estén otra vez detrás.\
+		<b> Nathan: </b> Y aquÃ­ estÃ¡ Sully, parece que estÃ¡ abandonado y sin nadie a la vista.\
+		<b> Sully: </b> A no ser que Marlowe y los suyos estÃ©n otra vez detrÃ¡s.\
 		<b> Nathan: </b> Si, no es la primera vez que nos pasa, mejor darse prisa.\
-		<b> Sully: </b>  ¿Ves algo para colarse Nate? hay demasiada maleza.\
+		<b> Sully: </b>  Â¿Ves algo para colarse Nate? hay demasiada maleza.\
 		<b> Nathan: </b> Probemos por esa cornisa Sully.\
 		Nathan y Victor se cuelan por una cornisa dentro del hall principal del castillo.\
-		Se dan cuenta de que todo está podrido y la maleza se ha apoderado del lugar\
-		<b> Nathan: </b> !Dios santo, solo arbustos y raices de arboles¡.\
-		<b> Sully: </b> Ey Nate,¿Qué es eso que brilla? parece como un botón ¿no? .\
+		Se dan cuenta de que todo estÃ¡ podrido y la maleza se ha apoderado del lugar\
+		<b> Nathan: </b> !Dios santo, solo arbustos y raices de arbolesÂ¡.\
+		<b> Sully: </b> Ey Nate,Â¿QuÃ© es eso que brilla? parece como un botÃ³n Â¿no? .\
 		<b> Nathan: </b> Voy a pulsarlo.\
-		Nathan pulsa el botón y seguidamente se abre un pasadizo secreto que da a una cripta con lo que parece ser tumbas templarias\
-		<b> Nathan: </b>  Están aquí Sully, los guardianes templarios, seguro que alguno guarda en su tumba alguna pista.\
+		Nathan pulsa el botÃ³n y seguidamente se abre un pasadizo secreto que da a una cripta con lo que parece ser tumbas templarias\
+		<b> Nathan: </b>  EstÃ¡n aquÃ­ Sully, los guardianes templarios, seguro que alguno guarda en su tumba alguna pista.\
 		<b> Sully: </b>  Abramoslas Nate. Pero empecemos por esa del medio que parece mas importante.\
 		Nathan y Sully abren la tumba del medio. Lo que se encuentran es uno de los mensajeros personales de Sir.Francis Drake\
-		<b> Nathan: </b> Pero.. si.. es él Sully, Henrry Avery .\
+		<b> Nathan: </b> Pero.. si.. es Ã©l Sully, Henrry Avery .\
 		<b> Sully: </b> Mira Nate, tiene una carta en su mano.\
-		<b> Carta: </b> Señor Francis, la expedición concluyó como usted mandó, aguardaremos con el artefacto en el desierto de Arabia. <a href='Avión'> Desierto Arabia </a> .\</p>",
-		{
+		<b> Carta: </b> SeÃ±or Francis, la expediciÃ³n concluyÃ³ como usted mandÃ³, aguardaremos con el artefacto en el desierto de Arabia. <a href='avion'> Desierto Arabia </a> .\</p>",
+        {
             heading: "Chateau",
             enter: function (character, system, from) {
                 system.setQuality(
@@ -133,29 +131,31 @@ undum.game.situations = {
                 );
             },
         }
-        
+            
     ),
 
-    Avión: new udum.SimpleSituation(
-        "<h1> Polizón. </h1>\
-        <p> Nathan se encuentra en el avión que lo lleva al desierto de Rub al-Jali en Arabia. No fue fácil entrar en el avión. Primero tuvo que derrotar a algunos hombres de Marlowe.\
-        Después, Nate tuvo que infiltrarse en la bodega del avión. No tardarán en darse cuenta de que Nate está allí...\
-        Nate está indeciso, no sabe si el avión aterrizará en el desierto o tendrá que tirarse en paracaidas. Tendrá que decidir si <a href='Explorar'> explorar el avión </a> en busca de algún paracaidas\
+   avion: new undum.SimpleSituation(
+        "<h1> PolizÃ³n. </h1>\
+        <p> Nathan se encuentra en el aviÃ³n que lo lleva al desierto de Rub al-Jali en Arabia. No fue fÃ¡cil entrar en el aviÃ³n. Primero tuvo que derrotar a algunos hombres de Marlowe.\
+        DespuÃ©s, Nate tuvo que infiltrarse en la bodega del aviÃ³n. No tardarÃ¡n en darse cuenta de que Nate estÃ¡ allÃ­...\
+        Nate estÃ¡ indeciso, no sabe si el aviÃ³n aterrizarÃ¡ en el desierto o tendrÃ¡ que tirarse en paracaidas. TendrÃ¡ que decidir si <a href='explorar'> explorar el aviÃ³n </a> en busca de algÃºn paracaidas\
         o <a href='quedarse'> quedarse en la bodega </a> y esperar a que aterrice y escaparse. \</p>"
     ),
 
-    quedarse: new udum.SimpleSituation(
-        "<p> Nate ha cometido un gran error quedándose. Pronto le pillaron y tuvo que pelearse con los mercenarios para poder escapar. Tuvo mucha suerte, ya que abrieron la compuerta del avión y\
-        muchas cosas de las que había en la bodega tenían un paracaidas incorporado. Finalmente fue despedido y consiguió agarrarse a uno de esos objetos\
-        y llegó sano y salvo <a href='desierto'> a la arena del desierto. </a> Podría haber acabado estampado... </p>",
+    quedarse: new undum.SimpleSituation(
+        "<p> Nate ha cometido un gran error quedÃ¡ndose. Pronto le pillaron y tuvo que pelearse con los mercenarios para poder escapar. Tuvo mucha suerte, ya que abrieron la compuerta del aviÃ³n y\
+        muchas cosas de las que habÃ­a en la bodega tenÃ­an un paracaidas incorporado. Finalmente fue despedido y consiguiÃ³ agarrarse a uno de esos objetos\
+        y llegÃ³ sano y salvo <a href='desierto'> a la arena del desierto. </a> PodrÃ­a haber acabado estampado... </p>"
     ),
 
-    Explorar: new udum.SimpleSituation(
-        "<p> Nate decide explorar el avión en busca de un paracaidas. Tuvo que esquivar a algunos hombres de Marlowe y ser muy sigiloso, pero finalmente consiguió robar un paracaidas.\
-        Se fue hacia una ventana para intentar ver donde estaba. Comprobó que el avión estaba volando muy bajo y decidió que era un buen momento para irse hacia la parte de atrás del\
-        avión, abrir la compuerta y tirarse en paracaidas. Tuvo que hacerlo muy rápido para que nadie se lo impideiera, pero finalmente llegó al <a href='desierto'> desierto </a>. </p>",
+    explorar: new undum.SimpleSituation(
+        "<p> Nate decide explorar el aviÃ³n en busca de un paracaidas. Tuvo que esquivar a algunos hombres de Marlowe y ser muy sigiloso, pero finalmente consiguiÃ³ robar un paracaidas.\
+        Se fue hacia una ventana para intentar ver donde estaba. ComprobÃ³ que el aviÃ³n estaba volando muy bajo y decidiÃ³ que era un buen momento para irse hacia la parte de atrÃ¡s del\
+        aviÃ³n, abrir la compuerta y tirarse en paracaidas. Tuvo que hacerlo muy rÃ¡pido para que nadie se lo impideiera, pero finalmente llegÃ³ al <a href='desierto'> desierto </a>. </p>"
     ),
 
+
+    
     qualities: new undum.SimpleSituation(
         "<p>Let's talk about the character.\
         The character is described by a series of <em>qualities</em>. These\
