@@ -99,7 +99,6 @@ esperada, realizando en proximos sprints las funcionalidades faltantes y que dar
 EL reparto de tareas, aunque en ciertas ocasiones trabajamos de forma conjunta fue la siguiente:
 	
 - Juan: Diálogos 
-
 - Alberto: Historia y progreso
 - Antonio: Interacción y animación
 
