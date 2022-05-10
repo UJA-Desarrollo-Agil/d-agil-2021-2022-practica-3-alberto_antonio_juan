@@ -89,8 +89,10 @@ Aunque hemos tenido unos problemas de planificación, sabemos que terminaremos e
 esperada, realizando en proximos sprints las funcionalidades faltantes y que darán en toque final a nuestro producto.
 	
 # Sprint 2
-	En la segunda parte de esta práctica hemos finalizado nuestro producto.
-	
+En la segunda parte de esta práctica hemos finalizado nuestro producto.
+![foto1](https://user-images.githubusercontent.com/99421003/167676800-5a7b23e1-03af-49b2-92e9-f3ae4d454359.png)
+![foto2](https://user-images.githubusercontent.com/99421003/167676855-bc5c97dd-c060-4975-b1fb-741823ad729a.png)
+
 >Captura de pantalla del tablero Trello al comienzo del sprint 2.
 
 
@@ -119,6 +121,9 @@ consideremos que no tenía valor suficiente, la segunda y que más peso tenía, 
 En este segundo sprint hemos completado nuestro producto, completando las historias de usuario establecidas con anterioridad.
 
 >Capturas de trello al final del producto:
+![foto3](https://user-images.githubusercontent.com/99421003/167676958-13da10b4-2ce0-4d18-9727-f47290766df1.png)
+![foto4](https://user-images.githubusercontent.com/99421003/167676994-24edf3a9-998a-4b62-8a66-f7d7fee8564f.png)
+![foto5](https://user-images.githubusercontent.com/99421003/167677010-f4626d97-2ee4-4818-a031-9a3d97b45a94.png)
 
 
 ## Sprint Retrospective
