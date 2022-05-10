@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\games",
+    "\\games\\media",
+    "\\games\\media\\games",
+    "\\games\\media\\games\\tutorial"
   ],
   "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false

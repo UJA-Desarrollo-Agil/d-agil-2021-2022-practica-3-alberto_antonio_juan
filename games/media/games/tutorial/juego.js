@@ -123,7 +123,7 @@ undum.game.situations = {
 		Nathan y Sully abren la tumba del medio. Lo que se encuentran es uno de los mensajeros personales de Sir.Francis Drake\
 		<b> Nathan: </b> Pero.. si.. es él Sully, Henrry Avery .\
 		<b> Sully: </b> Mira Nate, tiene una carta en su mano.\
-		<b> Carta: </b> Señor Francis, la expedición concluyó como usted mandó, aguardaremos con el artefacto en el desierto de Arabia. <a href='Arabia'> Desierto Arabia </a> .\</p>",
+		<b> Carta: </b> Señor Francis, la expedición concluyó como usted mandó, aguardaremos con el artefacto en el desierto de Arabia. <a href='Avión'> Desierto Arabia </a> .\</p>",
 		{
             heading: "Chateau",
             enter: function (character, system, from) {
@@ -135,6 +135,27 @@ undum.game.situations = {
         }
         
     ),
+
+    Avión: new udum.SimpleSituation(
+        "<h1> Polizón. </h1>\
+        <p> Nathan se encuentra en el avión que lo lleva al desierto de Rub al-Jali en Arabia. No fue fácil entrar en el avión. Primero tuvo que derrotar a algunos hombres de Marlowe.\
+        Después, Nate tuvo que infiltrarse en la bodega del avión. No tardarán en darse cuenta de que Nate está allí...\
+        Nate está indeciso, no sabe si el avión aterrizará en el desierto o tendrá que tirarse en paracaidas. Tendrá que decidir si <a href='Explorar'> explorar el avión </a> en busca de algún paracaidas\
+        o <a href='quedarse'> quedarse en la bodega </a> y esperar a que aterrice y escaparse. \</p>"
+    ),
+
+    quedarse: new udum.SimpleSituation(
+        "<p> Nate ha cometido un gran error quedándose. Pronto le pillaron y tuvo que pelearse con los mercenarios para poder escapar. Tuvo mucha suerte, ya que abrieron la compuerta del avión y\
+        muchas cosas de las que había en la bodega tenían un paracaidas incorporado. Finalmente fue despedido y consiguió agarrarse a uno de esos objetos\
+        y llegó sano y salvo <a href='desierto'> a la arena del desierto. </a> Podría haber acabado estampado... </p>",
+    ),
+
+    Explorar: new udum.SimpleSituation(
+        "<p> Nate decide explorar el avión en busca de un paracaidas. Tuvo que esquivar a algunos hombres de Marlowe y ser muy sigiloso, pero finalmente consiguió robar un paracaidas.\
+        Se fue hacia una ventana para intentar ver donde estaba. Comprobó que el avión estaba volando muy bajo y decidió que era un buen momento para irse hacia la parte de atrás del\
+        avión, abrir la compuerta y tirarse en paracaidas. Tuvo que hacerlo muy rápido para que nadie se lo impideiera, pero finalmente llegó al <a href='desierto'> desierto </a>. </p>",
+    ),
+
     qualities: new undum.SimpleSituation(
         "<p>Let's talk about the character.\
         The character is described by a series of <em>qualities</em>. These\
